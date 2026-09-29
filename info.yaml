@@ -1,0 +1,47 @@
+# Tiny Tapeout project information
+project:
+  title:        "On-Chip Supply-Droop Timing Monitor"
+  author:       "Prasa"
+  discord:      ""
+  description:  "Supply-droop monitor using a VDD-sensitive ring oscillator and frequency divider."
+  language:     "Verilog"
+  clock_hz:     0
+  tiles:        "1x1"
+
+  top_module:  "tt_um_prasa_droop_monitor"
+
+  source_files:
+    - "project.v"
+
+pinout:
+  # Inputs
+  ui[0]: "RO_ENABLE"
+  ui[1]: "RESET"
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "RO_DIV0"
+  uo[1]: "RO_DIV1"
+  uo[2]: "RO_DIV2"
+  uo[3]: "RO_DIV3"
+  uo[4]: "RO_DIV4"
+  uo[5]: "RO_DIV5"
+  uo[6]: "RO_DIV6"
+  uo[7]: "RO_DIV7"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+yaml_version: 6
