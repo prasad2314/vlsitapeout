@@ -43,3 +43,8 @@ COCOTB_TEST_MODULES = test
 
 # include cocotb's make rules to take care of the simulator setup
 include $(shell cocotb-config --makefiles)/Makefile.sim
+
+# SKY130 behavioral model for RTL CI only
+ifeq ($(GATES),)
+VERILOG_SOURCES += $(PWD)/sky130_sim.v
+endif
